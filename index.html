@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-cnt">
+            <input type="search" placeholder="Search a todo...">
+        </div>
+        <div class="todo-cnt todo-cnt-center" id="todo-cnt">
+            Add some notes...
+        </div>
+        <div class="add-new-cnt">
+            <div class="input-cnt">
+                <input type="text" id="new-todo" placeholder="Add New...">
+            </div>
+            <div class="btn-cnt">
+                <input type="button" value="Add" onclick="addNewTodo()">
+            </div>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 10vh auto;
+    background-color: tomato;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.container > div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.container > div > input[type='search']{
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container .todo-cnt{
+    height: 350px;
+    justify-content: flex-start;
+    align-items: center;
+    color: snow;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.container .todo-cnt-center{
+    justify-content: center;
+}
+
+.container .add-new-cnt {
+    flex-direction: row;
+}
+
+.container > div > .input-cnt {
+    width: 80%;
+}
+
+.container > div > .btn-cnt {
+    width: 20%;
+}
+
+.container > div > div > input[type='text']{
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container > div > div > input[type='button']{
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 200ms linear;
+}
+
+
+.container > div > div > input[type='button']:hover{
+    background-color: black;
+    color: yellow;
+}
+
+
+.container .todo-cnt .todo-node{
+    display: flex;
+    background-color: antiquewhite;
+    margin: 10px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+  .todo-node input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .todo-node label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .todo-node label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .todo-node input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
+.completed-task{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.content-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.edit-wrapper>button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    transition: 200ms linear;
+}
+.edit-wrapper>button:hover{
+    background-color: black;
+    color: snowwhite;
+}
+
+.time-cnt{
+    font-size: 13px;
+    padding-top: 7px;
+    color: grey;
+    font-style: italic;
+}
